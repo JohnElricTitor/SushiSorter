@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bb2854cab7c9d845b2334462dffcfe4, type: 3}
+  m_Name: Items
+  m_EditorClassIdentifier: 
+  Maki:
+  - {fileID: 7605725737469358814, guid: 6dae71d007c186749a9c838f0a8fd646, type: 3}
+  - {fileID: 1162515226987905582, guid: 0639acbb9335d1c48a8729ae28388c75, type: 3}
+  - {fileID: 2203647686582439180, guid: 9f21081696f0be54cbb32d4e90eb9131, type: 3}
+  Nigiri:
+  - {fileID: 4625321516627621809, guid: aeb32c80f58ffbe43ae8aa25c913cf80, type: 3}
+  - {fileID: 1524291181021922146, guid: 0e408195c3255e74b9957560a58d9ba6, type: 3}
+  - {fileID: 2579203943081992861, guid: cf94caec5a5052b48a11d8530c09aa3c, type: 3}
+  - {fileID: 4464294382247229392, guid: a2a90f267d11381439220d97c7c1ddb0, type: 3}
+  - {fileID: 5186704110643157889, guid: 881f5e7bffbc5a74b8d4419c3daa53ba, type: 3}
+  Ikura:
+  - {fileID: 192805764371897150, guid: e2197bff335cd534999f3a5312401e49, type: 3}
+  Roll:
+  - {fileID: 3608949407348416392, guid: bfb7788d511aaf64bbe0251bf65da0f5, type: 3}
