@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f24cbfe1a79871409b4d15e1a0f74f7, type: 3}
+  m_Name: Stats
+  m_EditorClassIdentifier: 
+  servings: 0
+  bonusScore: 0
+  complaints: 0
+  totalScore: 0
+  death: 0
+  SpawnRate: 0
+  ConveyorSpeed: 0
+  isEnd: 1
+  isPause: 0

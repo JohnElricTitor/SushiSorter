@@ -5,5 +5,5 @@ using UnityEngine;
 public class SushiType : MonoBehaviour
 {
     [HideInInspector] public enum sushiTypes { Maki, Nigiri, Ikura, Roll };
-    public sushiTypes sushi;
+    public sushiTypes type;
 }

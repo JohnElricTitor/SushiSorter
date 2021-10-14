@@ -1,2 +1,0 @@
-# SushiSorter
-Sort some sushi

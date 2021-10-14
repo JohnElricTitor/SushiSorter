@@ -7,6 +7,7 @@ public class TouchControls : MonoBehaviour
     Vector3 mOffset;
     private float mZCoord; 
 
+
     private void OnMouseDown()
     {
         mZCoord = Camera.main.WorldToScreenPoint(gameObject.transform.position).z;
@@ -15,7 +16,7 @@ public class TouchControls : MonoBehaviour
     }
     private void OnMouseDrag()
     {
-        transform.position = GetMouseWorldPos() + mOffset + new Vector3(0,5,0);
+        transform.position = new Vector3 (GetMouseWorldPos().x, 1, GetMouseWorldPos().y);
     }
     private void OnMouseUp()
     {

@@ -4,102 +4,128 @@ using UnityEngine;
 
 public class Containers : MonoBehaviour
 {
-    [SerializeField] Transform[] makiPos = new Transform[8];        // Coordinates of where the pieces go
-    [SerializeField] Transform[] nigiriPos = new Transform[4];      // Coordinates of where the pieces go
-    [SerializeField] Transform[] ikuraPos = new Transform[4];       // Coordinates of where the pieces go
-    [SerializeField] Transform[] rollPos = new Transform[3];        // Coordinates of where the pieces go
+    // Coordinates of where the pieces go
+    [SerializeField] Transform[] makiPos = new Transform[8];        
+    [SerializeField] Transform[] nigiriPos = new Transform[4];      
+    [SerializeField] Transform[] ikuraPos = new Transform[4];       
+    [SerializeField] Transform[] rollPos = new Transform[3];
 
-    public SushiType.sushiTypes boxType;
-    public bool isActive;      //First piece has not been placed to determine box type 
-    bool isFull;        //Box is completely packed 
+    //[SerializeField] GameObject[] spawner;
 
-    [SerializeField] int slots = 0;      //max number of pieces
-    int slot = 0;       //current slot 
+    [SerializeField] Stats stats;
 
 
-    // Start is called before the first frame update
+    public SushiType.sushiTypes boxType;                            //MAKI,NIGIRI,IKURA, OR ROLL
+    SushiType.sushiTypes currentType;                               //THE TYPE OF THE CURRENT SUSHI PIECE 
+
+    public bool isFirst;                                            //FIRST PIECE HAS NOT BEEN PLACED TO DETERMINE BOX TYPE 
+
+    [SerializeField] int maxSlots = 0;                              //MAX NUMBER OF PIECES
+    int currentSlot = 0;                                            //CURRENT SLOT
+                                                        
+    public int spawnPos;                                            //USED TO TELL CONTAINER SPAWNER WHICH AREA IT IS SPAWNED IN  
+
+    private void Start()
+    {
+        
+    }
+
     private void OnTriggerEnter(Collider other)
     {
-        if (!isActive)
+        if (!isFirst)                                               //IF FIRST PIECE HASNT BEEN PLACED IN BOX             
+            AssignType(other);                                      
+
+        if (isFirst)                                                //IF BOX TYPE HAS BEEN CHOSEN, CHECK NEW PIECE TYPE         
+            DetectType(other);                   
+
+        if (currentSlot == maxSlots)                                //IF ALL THE SLOTS ARE FULL 
         {
-            boxType = other.transform.GetComponent<PickUp>().sushi;
-
-            switch(other.transform.GetComponent<PickUp>().sushi)
-            {
-                case (SushiType.sushiTypes.Maki):
-                    slots = 8;
-                    break;
-
-                case (SushiType.sushiTypes.Nigiri):
-                    slots = 4;
-                    break;
-
-                case (SushiType.sushiTypes.Ikura):
-                    slots = 4;
-                    break;
-
-                case (SushiType.sushiTypes.Roll):
-                    slots = 3;
-                    break;
-
-                default:
-                    slots = 0;
-                break;
-                    
-            }       
-            isActive = true;
+            GetComponent<Animator>().SetBool("isReady", true);      //PLAY ANIMATION            
         }
-        
-        if (isActive)
-        {
-            if (other.transform.GetComponent<PickUp>().sushi == boxType)        //confirm the piece in belongs in set 
-            {
-                if (slot < slots)                                               //confirm theres available slots 
-                {
-                    if(boxType == SushiType.sushiTypes.Maki)
-                    {
-                        other.transform.position = makiPos[slot].position;
-                        other.transform.rotation = makiPos[slot].rotation;
-                        other.transform.parent = transform;
-                        other.GetComponent<BoxCollider>().enabled = false;          //disable collider
-                        slot++;                                                     //move to next slot 
-                    }
-                    else if (boxType == SushiType.sushiTypes.Nigiri)
-                    {
-                        other.transform.position = nigiriPos[slot].position;
-                        other.transform.rotation = nigiriPos[slot].rotation;
-                        other.transform.parent = transform;
-                        other.GetComponent<BoxCollider>().enabled = false;          //disable collider
-                        slot++;                                                     //move to next slot 
-                    }
-                    else if (boxType == SushiType.sushiTypes.Ikura)
-                    {
-                        other.transform.position = ikuraPos[slot].position;
-                        other.transform.rotation = nigiriPos[slot].rotation;
-                        other.transform.parent = transform;
-                        other.GetComponent<BoxCollider>().enabled = false;          //disable collider
-                        slot++;                                                     //move to next slot 
-                    }
-                    else if (boxType == SushiType.sushiTypes.Roll)
-                    {
-                        other.transform.position = rollPos[slot].position;
-                        other.transform.rotation = rollPos[slot].rotation;
-                        other.transform.parent = transform;
-                        other.GetComponent<BoxCollider>().enabled = false;          //disable collider
-                        slot++;                                                     //move to next slot 
-                    }
-                }
-            }
-        }
-    
-        if (slot == slots)
-            GetComponent<Animator>().SetBool("isReady", true);
     
     }
 
-    private void OnTriggerExit(Collider other)
+    void AssignType(Collider other)
     {
-        Debug.Log("Exit");
+        boxType = other.transform.GetComponent<PickUp>().type;      //MAKE THE BOX TYPE THE SAME AS THE FIRST SUSHI PIECE
+
+        switch (boxType)                                            //CHOSE SLOT LAYOUT
+        {
+            case (SushiType.sushiTypes.Maki):
+                maxSlots = 8;
+                break;
+
+            case (SushiType.sushiTypes.Nigiri):
+                maxSlots = 4;
+                break;
+
+            case (SushiType.sushiTypes.Ikura):
+                maxSlots = 4;
+                break;
+
+            case (SushiType.sushiTypes.Roll):
+                maxSlots = 3;
+                break;
+
+            default:
+                maxSlots = 0;
+                break;
+        }
+        isFirst = true;
     }
+
+    void DetectType(Collider other)                                 //DETECT SUSHI TYPE
+    {
+        currentType = other.transform.GetComponent<PickUp>().type;  //CURRENT TYPE IN HAND 
+
+        if ( currentType == boxType)                                  
+        {
+            if (currentSlot < maxSlots)                                         //confirm theres available slots 
+            {
+                if (boxType == SushiType.sushiTypes.Maki)
+                {
+                    other.transform.position = makiPos[currentSlot].position;
+                    other.transform.rotation = makiPos[currentSlot].rotation;
+                    other.transform.parent = transform;
+                    other.GetComponent<BoxCollider>().enabled = false;          
+                    currentSlot++;
+                }
+                else if (boxType == SushiType.sushiTypes.Nigiri)
+                {
+                    other.transform.position = nigiriPos[currentSlot].position;
+                    other.transform.rotation = nigiriPos[currentSlot].rotation;
+                    other.transform.parent = transform;
+                    other.GetComponent<BoxCollider>().enabled = false;          
+                    currentSlot++;
+                }
+                else if (boxType == SushiType.sushiTypes.Ikura)
+                {
+                    other.transform.position = ikuraPos[currentSlot].position;
+                    other.transform.rotation = nigiriPos[currentSlot].rotation;
+                    other.transform.parent = transform;
+                    other.GetComponent<BoxCollider>().enabled = false;          
+                    currentSlot++;
+                }
+                else if (boxType == SushiType.sushiTypes.Roll)
+                {
+                    other.transform.position = rollPos[currentSlot].position;
+                    other.transform.rotation = rollPos[currentSlot].rotation;
+                    other.transform.parent = transform;
+                    other.GetComponent<BoxCollider>().enabled = false;          
+                    currentSlot++;
+                    
+                }
+                stats.servings += 1;
+            }            
+        }
+    }
+
+    public void End()                                                               //ANIMATION CALLS END() WHICH SENDS SPAWN INFO AND DESTORYS ITSELF 
+    {
+        this.GetComponentInParent<ContainerSpawn>().Spawn(spawnPos);
+        stats.bonusScore += maxSlots;
+        Destroy(this.gameObject);
+        
+    }   
 }
 

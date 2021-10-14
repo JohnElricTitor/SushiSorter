@@ -5,14 +5,13 @@ using UnityEngine;
 public class PickUp : SushiType
 {
     
-    [SerializeField] float speed;
+    float speed;
     [SerializeField] float rayLength;
 
+    
     private void Update()
     {
         FloorCheck();
-       
-
     }
 
     void FloorCheck()

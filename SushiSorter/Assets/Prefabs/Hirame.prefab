@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 3009343504346109565}
   - component: {fileID: 1019962721677681335}
   - component: {fileID: 1866239643333971593}
-  - component: {fileID: 1866239643333971595}
   - component: {fileID: 1866239643333971592}
+  - component: {fileID: 1866239643333971595}
   m_Layer: 0
   m_Name: Hirame
   m_TagString: Untagged
@@ -95,23 +95,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.8, y: 0.4, z: 0.4}
-  m_Center: {x: 0, y: 0.2, z: 0}
---- !u!114 &1866239643333971595
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1524291181021922146}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eff9300a77f4926409c2c71dfe318a51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sushi: 1
-  speed: 0
-  rayLength: 0.1
+  m_Size: {x: 1.25, y: 0.6, z: 0.65}
+  m_Center: {x: -0.01, y: 0.297, z: 0}
 --- !u!114 &1866239643333971592
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -124,3 +109,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05fd1ee4153299842889870ed7cc3f97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stats: {fileID: 11400000, guid: d150a9fba0f2d344ab23c43a72b1ddd9, type: 2}
+--- !u!114 &1866239643333971595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1524291181021922146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eff9300a77f4926409c2c71dfe318a51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 1
+  rayLength: 0.1

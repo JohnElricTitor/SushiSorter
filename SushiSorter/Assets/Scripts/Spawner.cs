@@ -7,12 +7,14 @@ public class Spawner : MonoBehaviour
     [SerializeField] Transform[] spawnPoints;
     [SerializeField] Items item;
 
-    [SerializeField] int timer;
+    float timer;
+    [SerializeField] Stats stats;
     int randPos;
     int randType;
 
     private void Start()
     {
+        timer = stats.SpawnRate;
         InvokeRepeating("Spawn", 0, timer);
     }
     
