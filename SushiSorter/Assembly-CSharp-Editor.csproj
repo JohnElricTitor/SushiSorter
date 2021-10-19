@@ -56,7 +56,67 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\TutorialInfo\Scripts\Editor\ReadmeEditor.cs" />
+    <Compile Include="Assets\GleyPlugins\About\Editor\AssetStorePackage.cs" />
+    <Compile Include="Assets\GleyPlugins\GameServices\Scripts\Editor\GameServicesSettingsWindow.cs" />
+    <Compile Include="Assets\GleyPlugins\Ads\Scripts\Editor\SettingsWindow.cs" />
+    <Compile Include="Assets\GleyPlugins\RateGame\Scripts\VisualScriptingSupport\GameFlowSupport\Editor\ShowRatePopupEditor.cs" />
+    <Compile Include="Assets\GleyPlugins\EasyIAP\Scripts\VisiualScriptingSupport\GameFlowSupport\Editor\InitializeIAPEditor.cs" />
+    <Compile Include="Assets\GleyPlugins\EasyIAP\Scripts\VisiualScriptingSupport\GameFlowSupport\Editor\CheckIfBoughtEditor.cs" />
+    <Compile Include="Assets\GleyPlugins\EasyIAP\Scripts\Editor\IAPSettingsWindow.cs" />
+    <Compile Include="Assets\GleyPlugins\Common\Editor\PreprocessorDirective.cs" />
+    <Compile Include="Assets\GleyPlugins\CrossPromo\Scripts\VisualScriptingSupport\GameFlow\Editor\ShowPromoEditor.cs" />
+    <Compile Include="Assets\GleyPlugins\Ads\Scripts\VisualScriptingSupport\GameFlowSupport\Editor\ShowRewardedVideoEditor.cs" />
+    <Compile Include="Assets\GleyPlugins\Ads\Scripts\Editor\AdSettingsDataEditor.cs" />
+    <Compile Include="Assets\GleyPlugins\CrossPromo\Scripts\VisualScriptingSupport\GameFlow\Editor\InitializeCrossPromoEditor.cs" />
+    <Compile Include="Assets\GleyPlugins\Common\Editor\Constants.cs" />
+    <Compile Include="Assets\GleyPlugins\GameServices\Scripts\VisualScriptingSupport\GameFlowSupport\Editor\ShowLeaderboardsEditor.cs" />
+    <Compile Include="Assets\GleyPlugins\AllPlatformsSave\Scripts\Editor\SaveSettingsWindow.cs" />
+    <Compile Include="Assets\GleyPlugins\About\Editor\EditorFileLoader.cs" />
+    <Compile Include="Assets\GleyPlugins\Ads\Scripts\VisualScriptingSupport\GameFlowSupport\Editor\InitializeGleyAdsEditor.cs" />
+    <Compile Include="Assets\GleyPlugins\About\Editor\AssetVersion.cs" />
+    <Compile Include="Assets\GleyPlugins\GameServices\Scripts\VisualScriptingSupport\GameFlowSupport\Editor\LogoutEditor.cs" />
+    <Compile Include="Assets\GleyPlugins\GameServices\Scripts\VisualScriptingSupport\GameFlowSupport\Editor\LoginEditor.cs" />
+    <Compile Include="Assets\GleyPlugins\EasyIAP\Scripts\Editor\IAPDataEditor.cs" />
+    <Compile Include="Assets\GleyPlugins\Localization\Scripts\Editor\GoogleTranslation.cs" />
+    <Compile Include="Assets\GleyPlugins\CrossPromo\Scripts\Editor\SettingsWindow.cs" />
+    <Compile Include="Assets\GleyPlugins\EasyIAP\Scripts\VisiualScriptingSupport\GameFlowSupport\Editor\RestorePurchasesEditor.cs" />
+    <Compile Include="Assets\GleyPlugins\Ads\Scripts\VisualScriptingSupport\GameFlowSupport\Editor\ShowInterstitialEditor.cs" />
+    <Compile Include="Assets\GleyPlugins\Notifications\Scripts\VisualScriptingSupport\GameFlowSupport\Editor\AppWasOpenFromNotificationEditor.cs" />
+    <Compile Include="Assets\GleyPlugins\Common\Editor\ImportRequiredPackages.cs" />
+    <Compile Include="Assets\GleyPlugins\Ads\Scripts\VisualScriptingSupport\GameFlowSupport\Editor\IsRewardedVideoAvailableEditor.cs" />
+    <Compile Include="Assets\GleyPlugins\About\Editor\GleyAboutWindow.cs" />
+    <Compile Include="Assets\GleyPlugins\RateGame\Scripts\VisualScriptingSupport\GameFlowSupport\Editor\IncreaseCustomEventsEditor.cs" />
+    <Compile Include="Assets\GleyPlugins\Ads\Scripts\VisualScriptingSupport\GameFlowSupport\Editor\SetConsentToYesEditor.cs" />
+    <Compile Include="Assets\GleyPlugins\DailyRewards\Scripts\Editor\SettingsWindow.cs" />
+    <Compile Include="Assets\GleyPlugins\Ads\Scripts\VisualScriptingSupport\GameFlowSupport\Editor\ShowBannerEditor.cs" />
+    <Compile Include="Assets\GleyPlugins\Ads\Scripts\VisualScriptingSupport\GameFlowSupport\Editor\RemoveAdsEditor.cs" />
+    <Compile Include="Assets\GleyPlugins\Notifications\Scripts\VisualScriptingSupport\GameFlowSupport\Editor\InitializeNotificationsEditor.cs" />
+    <Compile Include="Assets\GleyPlugins\EasyIAP\Scripts\VisiualScriptingSupport\GameFlowSupport\Editor\GetProductValueEditor.cs" />
+    <Compile Include="Assets\GleyPlugins\Notifications\Scripts\VisualScriptingSupport\GameFlowSupport\Editor\SendNotificationEditor.cs" />
+    <Compile Include="Assets\GleyPlugins\About\Editor\AssetVersions.cs" />
+    <Compile Include="Assets\GleyPlugins\Ads\Scripts\VisualScriptingSupport\GameFlowSupport\Editor\IsInterstitialAvailableEditor.cs" />
+    <Compile Include="Assets\GleyPlugins\RateGame\Scripts\VisualScriptingSupport\GameFlowSupport\Editor\ForceShowRatePopupEditor.cs" />
+    <Compile Include="Assets\GleyPlugins\Localization\Scripts\Editor\LanguageCode.cs" />
+    <Compile Include="Assets\GleyPlugins\Ads\Scripts\Editor\PostBuildStep.cs" />
+    <Compile Include="Assets\GleyPlugins\CrossPromo\Scripts\VisualScriptingSupport\GameFlow\Editor\AutoLoadAndShowEditor.cs" />
+    <Compile Include="Assets\GleyPlugins\About\Editor\AssetState.cs" />
+    <Compile Include="Assets\GleyPlugins\GameServices\Scripts\VisualScriptingSupport\GameFlowSupport\Editor\SubmitScoreEditor.cs" />
+    <Compile Include="Assets\GleyPlugins\EasyIAP\Scripts\VisiualScriptingSupport\GameFlowSupport\Editor\GetStorePriceEditor.cs" />
+    <Compile Include="Assets\GleyPlugins\Ads\Scripts\VisualScriptingSupport\GameFlowSupport\Editor\UserConsentWasSetEditor.cs" />
+    <Compile Include="Assets\GleyPlugins\GameServices\Scripts\VisualScriptingSupport\GameFlowSupport\Editor\ShowAchievementsEditor.cs" />
+    <Compile Include="Assets\GleyPlugins\JumpyCompleteGame\Scripts\Editor\JumpyEditorWindow.cs" />
+    <Compile Include="Assets\GleyPlugins\CrossPromo\Scripts\VisualScriptingSupport\GameFlow\Editor\ForceShowPromoEditor.cs" />
+    <Compile Include="Assets\GleyPlugins\Ads\Scripts\VisualScriptingSupport\GameFlowSupport\Editor\HideBannerEditor.cs" />
+    <Compile Include="Assets\GleyPlugins\EasyIAP\Scripts\VisiualScriptingSupport\GameFlowSupport\Editor\IsInitializedEditor.cs" />
+    <Compile Include="Assets\GleyPlugins\RateGame\Scripts\Editor\RateGameSettingsEditor.cs" />
+    <Compile Include="Assets\GleyPlugins\Notifications\Scripts\Editor\SettingsWindow.cs" />
+    <Compile Include="Assets\GleyPlugins\About\Editor\GleyAssets.cs" />
+    <Compile Include="Assets\GleyPlugins\GameServices\Scripts\VisualScriptingSupport\GameFlowSupport\Editor\SubmitAchievementEditor.cs" />
+    <Compile Include="Assets\GleyPlugins\EasyIAP\Scripts\VisiualScriptingSupport\GameFlowSupport\Editor\BuyProductEditor.cs" />
+    <Compile Include="Assets\GleyPlugins\Ads\Scripts\VisualScriptingSupport\GameFlowSupport\Editor\SetConsentToNoEditor.cs" />
+    <Compile Include="Assets\GleyPlugins\Localization\Scripts\Editor\SettingsWindow.cs" />
+    <Compile Include="Assets\GleyPlugins\About\Editor\IconReferences.cs" />
+    <Compile Include="Assets\GleyPlugins\RateGame\Scripts\Editor\SettingsWindow.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -298,6 +358,9 @@
     </Reference>
     <Reference Include="ICSharpCode.NRefactory">
       <HintPath>Library\PackageCache\com.unity.render-pipelines.core@10.4.0\Editor\ShaderGenerator\ICSharpCode.NRefactory.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityWindowsPhonePlugin">
+      <HintPath>Assets\GleyPlugins\AllPlatformsSave\Plugins\UnityWindowsPhonePlugin.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
@@ -718,6 +781,15 @@
     </Reference>
     <Reference Include="Unity.Mathematics">
       <HintPath>Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Monetization">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.Monetization.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Advertisements">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.Advertisements.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Advertisements.Editor">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.Advertisements.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

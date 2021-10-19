@@ -1,20 +1,20 @@
 m_ProjectFiles:
   m_ManifestFileStatus:
-    m_FilePath: C:/Users/Rami/Downloads/LYS VISION/SushiSorter/Packages/manifest.json
+    m_FilePath: E:/Projects/MyGames/PROJECTS&IDEAS/SushiSorter/SushiSorter/Packages/manifest.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637686073010667181
-    m_Hash: 474941933
+      ticks: 637701343762911939
+    m_Hash: 4268676329
   m_LockFileStatus:
-    m_FilePath: C:/Users/Rami/Downloads/LYS VISION/SushiSorter/Packages/packages-lock.json
+    m_FilePath: E:/Projects/MyGames/PROJECTS&IDEAS/SushiSorter/SushiSorter/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637686073010707078
-    m_Hash: 1580215973
+      ticks: 637701343765181304
+    m_Hash: 4263796493
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
@@ -71,12 +71,150 @@ m_PackageAssets:
         url: 
         revision: 
         path: 
+    - packageId: com.unity.ads@3.7.5
+      testable: 0
+      isDirectDependency: 1
+      version: 3.7.5
+      source: 1
+      resolvedPath: E:\Projects\MyGames\PROJECTS&IDEAS\SushiSorter\SushiSorter\Library\PackageCache\com.unity.ads@3.7.5
+      assetPath: Packages/com.unity.ads
+      name: com.unity.ads
+      displayName: Advertisement
+      author:
+        name: 
+        email: 
+        url: 
+      category: 
+      type: 
+      description: Unity Ads is a video ad network for iOS and Android that allows
+        you to quickly and effectively monetize your games.
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 0.0.3
+        - 0.0.4
+        - 0.0.5
+        - 0.0.6
+        - 0.0.7
+        - 0.0.8
+        - 0.0.10
+        - 0.0.11
+        - 0.0.12
+        - 0.0.13
+        - 0.0.14
+        - 0.0.15
+        - 0.0.16
+        - 2.0.0
+        - 2.0.3
+        - 2.0.4
+        - 2.0.7
+        - 2.0.8
+        - 2.3.1
+        - 2.3.2
+        - 3.0.1
+        - 3.0.2
+        - 3.0.3
+        - 3.1.1
+        - 3.2.0
+        - 3.3.0
+        - 3.3.1
+        - 3.4.0
+        - 3.4.1
+        - 3.4.2
+        - 3.4.4
+        - 3.4.5
+        - 3.4.7
+        - 3.4.9
+        - 3.5.0
+        - 3.5.2
+        - 3.6.1
+        - 3.7.0
+        - 3.7.1
+        - 3.7.3
+        - 3.7.5
+        compatible:
+        - 0.0.3
+        - 0.0.4
+        - 0.0.5
+        - 0.0.6
+        - 0.0.7
+        - 0.0.8
+        - 0.0.10
+        - 0.0.11
+        - 0.0.12
+        - 0.0.13
+        - 0.0.14
+        - 0.0.15
+        - 0.0.16
+        - 2.0.0
+        - 2.0.3
+        - 2.0.4
+        - 2.0.7
+        - 2.0.8
+        - 2.3.1
+        - 2.3.2
+        - 3.0.1
+        - 3.0.2
+        - 3.0.3
+        - 3.1.1
+        - 3.2.0
+        - 3.3.0
+        - 3.3.1
+        - 3.4.0
+        - 3.4.1
+        - 3.4.2
+        - 3.4.4
+        - 3.4.5
+        - 3.4.7
+        - 3.4.9
+        - 3.5.0
+        - 3.5.2
+        - 3.6.1
+        - 3.7.0
+        - 3.7.1
+        - 3.7.3
+        - 3.7.5
+        verified: 3.6.1
+      dependencies:
+      - name: com.unity.ugui
+        version: 1.0.0
+      resolvedDependencies:
+      - name: com.unity.ugui
+        version: 1.0.0
+      - name: com.unity.modules.ui
+        version: 1.0.0
+      - name: com.unity.modules.imgui
+        version: 1.0.0
+      keywords:
+      - ads
+      - unity
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 637635162230000000
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://github.cds.internal.unity3d.com/unity/com.unity.ads.git
+        revision: 0e92fa56fc4e4cd1fa305e76a911acdae6386b96
+        path: 
     - packageId: com.unity.collab-proxy@1.3.9
       testable: 0
       isDirectDependency: 1
       version: 1.3.9
       source: 1
-      resolvedPath: C:\Users\Rami\Downloads\LYS VISION\SushiSorter\Library\PackageCache\com.unity.collab-proxy@1.3.9
+      resolvedPath: E:\Projects\MyGames\PROJECTS&IDEAS\SushiSorter\SushiSorter\Library\PackageCache\com.unity.collab-proxy@1.3.9
       assetPath: Packages/com.unity.collab-proxy
       name: com.unity.collab-proxy
       displayName: Unity Collaborate
@@ -187,7 +325,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 2.0.7
       source: 1
-      resolvedPath: C:\Users\Rami\Downloads\LYS VISION\SushiSorter\Library\PackageCache\com.unity.ide.rider@2.0.7
+      resolvedPath: E:\Projects\MyGames\PROJECTS&IDEAS\SushiSorter\SushiSorter\Library\PackageCache\com.unity.ide.rider@2.0.7
       assetPath: Packages/com.unity.ide.rider
       name: com.unity.ide.rider
       displayName: JetBrains Rider Editor
@@ -294,7 +432,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 2.0.7
       source: 1
-      resolvedPath: C:\Users\Rami\Downloads\LYS VISION\SushiSorter\Library\PackageCache\com.unity.ide.visualstudio@2.0.7
+      resolvedPath: E:\Projects\MyGames\PROJECTS&IDEAS\SushiSorter\SushiSorter\Library\PackageCache\com.unity.ide.visualstudio@2.0.7
       assetPath: Packages/com.unity.ide.visualstudio
       name: com.unity.ide.visualstudio
       displayName: Visual Studio Editor
@@ -381,7 +519,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.2.3
       source: 1
-      resolvedPath: C:\Users\Rami\Downloads\LYS VISION\SushiSorter\Library\PackageCache\com.unity.ide.vscode@1.2.3
+      resolvedPath: E:\Projects\MyGames\PROJECTS&IDEAS\SushiSorter\SushiSorter\Library\PackageCache\com.unity.ide.vscode@1.2.3
       assetPath: Packages/com.unity.ide.vscode
       name: com.unity.ide.vscode
       displayName: Visual Studio Code Editor
@@ -452,7 +590,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 10.4.0
       source: 1
-      resolvedPath: C:\Users\Rami\Downloads\LYS VISION\SushiSorter\Library\PackageCache\com.unity.render-pipelines.universal@10.4.0
+      resolvedPath: E:\Projects\MyGames\PROJECTS&IDEAS\SushiSorter\SushiSorter\Library\PackageCache\com.unity.render-pipelines.universal@10.4.0
       assetPath: Packages/com.unity.render-pipelines.universal
       name: com.unity.render-pipelines.universal
       displayName: Universal RP
@@ -569,7 +707,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.1.24
       source: 1
-      resolvedPath: C:\Users\Rami\Downloads\LYS VISION\SushiSorter\Library\PackageCache\com.unity.test-framework@1.1.24
+      resolvedPath: E:\Projects\MyGames\PROJECTS&IDEAS\SushiSorter\SushiSorter\Library\PackageCache\com.unity.test-framework@1.1.24
       assetPath: Packages/com.unity.test-framework
       name: com.unity.test-framework
       displayName: Test Framework
@@ -663,7 +801,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 3.0.4
       source: 1
-      resolvedPath: C:\Users\Rami\Downloads\LYS VISION\SushiSorter\Library\PackageCache\com.unity.textmeshpro@3.0.4
+      resolvedPath: E:\Projects\MyGames\PROJECTS&IDEAS\SushiSorter\SushiSorter\Library\PackageCache\com.unity.textmeshpro@3.0.4
       assetPath: Packages/com.unity.textmeshpro
       name: com.unity.textmeshpro
       displayName: TextMeshPro
@@ -826,7 +964,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.4.7
       source: 1
-      resolvedPath: C:\Users\Rami\Downloads\LYS VISION\SushiSorter\Library\PackageCache\com.unity.timeline@1.4.7
+      resolvedPath: E:\Projects\MyGames\PROJECTS&IDEAS\SushiSorter\SushiSorter\Library\PackageCache\com.unity.timeline@1.4.7
       assetPath: Packages/com.unity.timeline
       name: com.unity.timeline
       displayName: Timeline
@@ -2784,7 +2922,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 1.0.6
       source: 1
-      resolvedPath: C:\Users\Rami\Downloads\LYS VISION\SushiSorter\Library\PackageCache\com.unity.ext.nunit@1.0.6
+      resolvedPath: E:\Projects\MyGames\PROJECTS&IDEAS\SushiSorter\SushiSorter\Library\PackageCache\com.unity.ext.nunit@1.0.6
       assetPath: Packages/com.unity.ext.nunit
       name: com.unity.ext.nunit
       displayName: Custom NUnit
@@ -2845,7 +2983,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 1.1.0
       source: 1
-      resolvedPath: C:\Users\Rami\Downloads\LYS VISION\SushiSorter\Library\PackageCache\com.unity.mathematics@1.1.0
+      resolvedPath: E:\Projects\MyGames\PROJECTS&IDEAS\SushiSorter\SushiSorter\Library\PackageCache\com.unity.mathematics@1.1.0
       assetPath: Packages/com.unity.mathematics
       name: com.unity.mathematics
       displayName: Mathematics
@@ -2875,6 +3013,7 @@ m_PackageAssets:
         - 1.1.0-preview.1
         - 1.1.0
         - 1.2.1
+        - 1.2.4
         compatible:
         - 0.0.12-preview.2
         - 0.0.12-preview.5
@@ -2890,7 +3029,8 @@ m_PackageAssets:
         - 1.1.0-preview.1
         - 1.1.0
         - 1.2.1
-        verified: 1.2.1
+        - 1.2.4
+        verified: 1.2.4
       dependencies: []
       resolvedDependencies: []
       keywords:
@@ -2920,7 +3060,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 10.4.0
       source: 1
-      resolvedPath: C:\Users\Rami\Downloads\LYS VISION\SushiSorter\Library\PackageCache\com.unity.render-pipelines.core@10.4.0
+      resolvedPath: E:\Projects\MyGames\PROJECTS&IDEAS\SushiSorter\SushiSorter\Library\PackageCache\com.unity.render-pipelines.core@10.4.0
       assetPath: Packages/com.unity.render-pipelines.core
       name: com.unity.render-pipelines.core
       displayName: Core RP Library
@@ -3075,7 +3215,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 10.4.0
       source: 1
-      resolvedPath: C:\Users\Rami\Downloads\LYS VISION\SushiSorter\Library\PackageCache\com.unity.shadergraph@10.4.0
+      resolvedPath: E:\Projects\MyGames\PROJECTS&IDEAS\SushiSorter\SushiSorter\Library\PackageCache\com.unity.shadergraph@10.4.0
       assetPath: Packages/com.unity.shadergraph
       name: com.unity.shadergraph
       displayName: Shader Graph
@@ -3233,7 +3373,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 4.3.1
       source: 1
-      resolvedPath: C:\Users\Rami\Downloads\LYS VISION\SushiSorter\Library\PackageCache\com.unity.searcher@4.3.1
+      resolvedPath: E:\Projects\MyGames\PROJECTS&IDEAS\SushiSorter\SushiSorter\Library\PackageCache\com.unity.searcher@4.3.1
       assetPath: Packages/com.unity.searcher
       name: com.unity.searcher
       displayName: Searcher
@@ -3263,6 +3403,7 @@ m_PackageAssets:
         - 4.3.2
         - 4.6.0-preview
         - 4.7.0-preview
+        - 4.9.1
         compatible:
         - 4.0.0-preview
         - 4.0.0
@@ -3278,6 +3419,7 @@ m_PackageAssets:
         - 4.3.2
         - 4.6.0-preview
         - 4.7.0-preview
+        - 4.9.1
         verified: 4.3.2
       dependencies: []
       resolvedDependencies: []
@@ -3306,5 +3448,5 @@ m_PackageAssets:
         path: 
   m_LocalPackages:
     m_LocalFileStatus: []
-m_ProjectPath: C:/Users/Rami/Downloads/LYS VISION/SushiSorter/Packages
+m_ProjectPath: E:/Projects/MyGames/PROJECTS&IDEAS/SushiSorter/SushiSorter/Packages
 m_EditorVersion: 2020.3.5f1 (8095aa901b9b)
